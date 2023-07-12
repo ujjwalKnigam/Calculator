@@ -1,0 +1,65 @@
+*{
+  padding:0px;
+  margin: 0px;
+}
+body{
+  background-color: azure;
+}
+.App{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.calculator{
+  width:100%;
+  max-width: 400px;
+  overflow: hidden;
+  border-radius: 16px;
+}
+.display{
+  background-color: black;
+  color: white;
+  text-align: right;
+  padding: 32px;
+  font-size: larger;
+  font-weight: 700;
+}
+button{
+  appearance: none;
+  border: none;
+}
+button:hover{
+  opacity: 0.4;
+}
+.operators{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: cyan;
+}
+.basic{
+  display: flex;
+  background-color: red;
+}
+.basic button{
+  flex:1 1 0%;
+  padding: 16px;
+}
+.operators button{
+  flex:1 1 25%;
+  padding: 16px;
+  cursor: pointer;
+  /* transition: 1; */
+  font-weight: 600;
+}
+.digits{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: darkorange;
+}
+.digits button{
+  flex: 1 1 33.33%;
+  padding: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
